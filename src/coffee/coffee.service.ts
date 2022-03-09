@@ -22,6 +22,7 @@ export class CoffeeService {
 
     create(createCoffeeDto: any) {
         this.coffees.push(createCoffeeDto);
+        return createCoffeeDto;
     }
 
     update(id: string, updateCoffeeDto: any) {
@@ -34,7 +35,7 @@ export class CoffeeService {
     remove(id: string) {
          const coffeeIndex = this.coffees.findIndex(item => item.id == +id);
          if (coffeeIndex => 0) {
-             this.coffees.splice(coffeeIndex, 1)
+             this.coffees.splice(coffeeIndex, 1);
          }
     }
 }
