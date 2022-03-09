@@ -10,10 +10,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
   imports: [CoffeeModule, TypeOrmModule.forRoot({
     type: 'postgres', // type of our database
       host: 'localhost', // database host
-      port: 5431, // database host
-      username: 'postgres', // username
-      password: 'root', // user password
-      database: 'postgres', // name of our database,
+      port: 5432, // database host
+      username: 'vikas', // username
+      password: 'root0713', // user password
+      database: 'nest_coffee', // name of our database,
       autoLoadEntities: true, // models will be loaded automatically 
       synchronize: true, // your entities will be synced with the database(recommended: disable in prod)
   })],
